@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <!-- <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark2">#00575A</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>-->
+    <color name="rose">#D81B60</color>
+    <color name="tabindicator">#323833</color>
+    <color name="white">#FFFFFF</color>
+    <color name="cardOutline">#ffff00</color>
+    <color name="black">#000000</color>
+    <color name="chart">#fcf586</color>
+    <color name="lightBlue">#6AC2E6</color>
+    <color name="dark">#000000</color>
+    <color name="light">#FFFFFF</color>
+    <color name="white_greyish">#EEEEEE</color>
+    <color name="button_selectorcolor">#9E9E9E</color>
+    <color name="background_color">#009688</color>
+
+   <color name="colorPrimary">#673fb4</color>
+    <color name="colorPrimaryDark">#512da8</color>
+    <color name="colorAccent">#ff6f00</color>
+    <color name="colorPrimaryDark2">#8561c5</color>
+    <color name="greenCard">#00838f</color>
+    <color name="lightCard">#448aff</color>
+    <color name="orangeCard">#ff5252</color>
+
+
+</resources>

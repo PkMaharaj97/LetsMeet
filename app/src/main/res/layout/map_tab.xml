@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.appbar.AppBarLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorAccent"
+
+    android:orientation="horizontal">
+    <ImageButton
+        android:layout_width="50dp"
+        style="?attr/borderlessButtonStyle"
+        android:layout_marginEnd="10dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="200dp"
+        android:id="@+id/open_search"
+        android:src="@drawable/search"/>
+    <ImageButton
+        android:layout_width="50dp"
+        android:layout_marginEnd="10dp"
+        style="?attr/borderlessButtonStyle"
+        android:layout_height="wrap_content"
+        android:id="@+id/open_nav"
+        android:src="@drawable/navigate2"/>
+    <ImageButton
+        android:layout_width="50dp"
+        android:layout_marginEnd="10dp"
+        style="?attr/borderlessButtonStyle"
+        android:id="@+id/select_menu"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:src="@drawable/menuicon"/>
+
+</LinearLayout>
+</com.google.android.material.appbar.AppBarLayout>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ScheduleFragment">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+ <androidx.cardview.widget.CardView
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:id="@+id/calenderCard"
+     android:layout_margin="2dp">
+     <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:orientation="vertical">
+     <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="40dp"
+         android:background="@color/colorPrimary"
+         android:orientation="horizontal">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@color/colorPrimaryDark"
+            android:id="@+id/viewAll"
+            android:text="View All"
+            android:layout_margin="5dp"
+            android:textColor="@color/light"/>
+         <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:textSize="20sp"
+             android:layout_marginLeft="150dp"
+             android:textColor="@color/white"
+             android:text="Calendar"/>
+         <Button
+             android:id="@+id/calBtn"
+             android:layout_width="30dp"
+             android:layout_height="30dp"
+             android:layout_marginEnd="10dp"
+             android:background="@drawable/down_arrow"/>
+     </LinearLayout>
+         <com.applandeo.materialcalendarview.CalendarView
+             android:id="@+id/calenderView"
+             android:layout_width="match_parent"
+             android:layout_height="320dp"
+              app:abbreviationsBarColor="@color/colorPrimaryDark"
+             app:abbreviationsLabelsColor="@android:color/white"
+             app:daysLabelsColor="@android:color/white"
+             app:headerColor="@color/colorPrimaryDark2"
+             app:layout_constraintLeft_toLeftOf="parent"
+             app:layout_constraintRight_toRightOf="parent"
+             app:layout_constraintTop_toTopOf="parent"
+             app:pagesColor="@color/colorPrimary"
+             app:highlightedDaysLabelsColor="#AEEA00"
+             android:visibility="gone"
+             app:eventsEnabled="false"
+             android:defaultFocusHighlightEnabled="true"
+             app:selectionColor="@android:color/white"
+             app:selectionLabelColor="#D2D6EC"
+             app:anotherMonthsDaysLabelsColor="#ABB2DF"
+             app:todayLabelColor="#AEEA00"
+             app:type="one_day_picker"/>
+
+     </LinearLayout>
+
+ </androidx.cardview.widget.CardView>
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/schedule_recycler_view"
+        android:scrollbars="vertical"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/no_events"
+            android:visibility="gone"
+            android:paddingStart="130dp"
+            android:text="NO EVENTS FOUND" />
+
+    </LinearLayout>
+
+</FrameLayout>

@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".map.MapActivity">
+
+<!-- Map Fragment embedded with the map object -->
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/SearchCardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        app:strokeColor="@color/lightBlue"
+        android:visibility="invisible">
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+            <SearchView
+                android:id="@+id/search"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:iconifiedByDefault="false"
+                android:scrollbarStyle="insideOverlay"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:title="Search" />
+
+
+
+</LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/NavCardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:visibility="invisible"
+        app:strokeColor="@color/lightBlue">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <SearchView
+        android:id="@+id/source_search"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:iconifiedByDefault="false"
+        android:scrollbarStyle="insideOverlay"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:title="Enter Source" />
+    <SearchView
+        android:id="@+id/destiny_search"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:iconifiedByDefault="false"
+        android:scrollbarStyle="insideOverlay"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:title="Enter Destination" />
+
+      </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/toggleCardView"
+        android:layout_width="60dp"
+        android:layout_height="120dp"
+        android:layout_gravity="center_vertical|right"
+         app:strokeColor="@color/lightBlue">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="3">
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:id="@+id/open_search"
+                android:layout_weight="1"
+                android:background="@color/lightBlue"
+                android:layout_margin="5dp"
+                android:src="@drawable/search"/>
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:id="@+id/open_nav"
+                android:layout_weight="1"
+                android:background="@color/lightBlue"
+                android:layout_margin="5dp"
+                android:src="@drawable/navigate2"/>
+            <ImageButton
+                android:layout_width="match_parent"
+                android:id="@+id/select_menu"
+                android:layout_height="0dp"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:background="@color/lightBlue"
+                android:src="@drawable/menuicon"/>
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/route_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="105dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="5dp"
+        android:visibility="invisible">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:weightSum="3"
+                android:orientation="horizontal">
+               <ImageButton
+                   android:layout_width="0dp"
+                   android:layout_height="45dp"
+                   android:layout_weight="1"
+                   android:src="@drawable/bike"
+                   android:id="@+id/mode_Bike"/>
+                <ImageButton
+                    android:layout_width="0dp"
+                    android:layout_height="45dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/car"
+                    android:id="@+id/mode_Car"/>
+                <ImageButton
+                    android:layout_width="0dp"
+                    android:layout_height="45dp"
+                    android:src="@drawable/walk"
+                    android:layout_weight="1"
+                    android:id="@+id/mode_Walk"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="2dp"
+                    android:text="By:"
+                    android:id="@+id/tv_mode"/>
+                 <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                     android:text="Dur"
+                     android:layout_marginStart="5dp"
+                     android:id="@+id/duration"/>
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="match_parent"
+                   android:layout_marginStart="5dp"
+                   android:text="Dst:"
+                   android:id="@+id/distance" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <ListView
+            android:id="@+id/resultsListViev"
+            style="@android:style/Widget.DeviceDefault.ExpandableListView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="130dp"
+            android:scrollbarStyle="outsideInset"
+            android:scrollbars="vertical"
+            android:visibility="invisible" />
+
+        <fragment
+            class="com.here.android.mpa.mapping.AndroidXMapFragment"
+            android:id="@+id/mapfragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+    </RelativeLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/current_loc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/fab_margin"
+        android:layout_gravity="bottom|end"
+        app:backgroundTint="@android:color/white"
+        app:fabSize="mini"
+        android:src="@drawable/userlocation"
+        tools:ignore="VectorDrawableCompat" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/nav_fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:backgroundTint="@android:color/white"
+        android:layout_gravity="top"
+         app:layout_anchor="@id/current_loc"
+        app:layout_anchorGravity="top"
+        android:src="@drawable/direction"/>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

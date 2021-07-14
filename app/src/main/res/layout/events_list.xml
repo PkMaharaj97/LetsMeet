@@ -1,0 +1,49 @@
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_height="70dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/to_event_card">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:padding="5dp"
+            android:id="@+id/back_layout"
+            android:background="@color/greenCard">
+
+            <TextView
+                android:id="@+id/to_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/croissant_one"
+                android:text="Meeting"
+                android:paddingTop="5dp"
+                android:textColor="@color/light"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:id="@+id/to_delivered_date_time"
+                   android:text="2020-08-09"
+                   android:layout_marginTop="3dp"
+                   android:layout_below="@id/to_title"
+                   android:textColor="@color/light"
+                   android:textSize="12sp"/>
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/status_icon"
+                        android:layout_below="@id/to_title"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@id/to_delivered_date_time"
+                        android:src="@drawable/added" />
+
+        </RelativeLayout>
+
+
+
+    </com.google.android.material.card.MaterialCardView>

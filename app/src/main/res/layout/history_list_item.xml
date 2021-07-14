@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/lightBlue"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp">
+   <TextView
+       android:layout_width="wrap_content"
+       android:layout_height="match_parent"
+       android:text="Added"
+       android:layout_marginStart="15dp"
+       android:textSize="20sp"
+       android:textColor="@color/white"/>
+      <!-- <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="match_parent"
+           android:layout_marginStart="15dp"
+           android:textSize="20sp"
+           android:text="At"
+           android:textColor="@color/white"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="15dp"
+            android:textSize="20sp"
+            android:id="@+id/history_timestramp"
+            android:text="20/03/2020 9:30:43"
+            android:textColor="@color/white"/>-->
+
+    </LinearLayout>
+
+</LinearLayout>

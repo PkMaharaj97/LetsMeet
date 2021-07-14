@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.letsmeet">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:usesCleartextTraffic="true"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning">
+        <activity android:name=".MainActivity" />
+        <activity android:name=".viewevent.ViewEventActivity" />
+        <activity android:name=".addevent.AddEvent" />
+        <activity android:name=".addevent.EventActivity" />
+        <activity android:name=".map.MapActivity" />
+        <activity android:name=".startup.FlashActivity"/>
+        <activity android:name=".startup.Signup"/>
+        <activity android:name=".startup.Login">
+        <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+        <meta-data android:name="com.here.android.maps.appid" android:value="4WBYazwiheVFETSTvwVJ"/>
+        <meta-data android:name="com.here.android.maps.apptoken" android:value="M99l8-byWxUPjc0QpIIfHQ"/>
+        <meta-data android:name="com.here.android.maps.license.key" android:value="IwjCKzvM8R2FYk5a82zwY+oTbSaJ4ouaR+bL63Laz5cDybY/hj2dIsYJxld//ALEnZ1xYvdRWYaAdFb87qlE37gYmZijW2iAXINvmhCRrp6YaJzMO4PnU8EAk10ar5+tYALiAyjfky48MpoGoe1Zkxl4j+uI8GKPcHCyS0IL3o/Kuc8vjdzPHBGmNL3bmi5qePsBwab4eAiw8GZwIoRAJUlU5yEgh/8KAHUBlxVd3OypuxUDyc8ZWBOIOZVfD7M/iGXnqlzBDapS9CRdOvgZktfg1PLsJBUg8TvDma5QpF45WjmQSqXvGuV1dk9Vo2HjuTfIoyC+1YGQp1NaDeU0973zq3qYhJbThhg21iEZV5qZhuvkLfME9c5qQGigVbuPrFezM/BWpqLCcGsbsJ/4DYB0nXQNFJbXchKyTd/FkKsjh7b84pnFyjQ87ei2mCF0Wk/8NpyQ0/CEwu5N4yaIBtaJ1P5NTwL7uEySMXxrEDRS7n1GBuBqGXhrl3jRtkTdRATFiSTeAT5o2d24v2nBtuP/a8UGwkRVFAHgDox+IkeM0tGrjzVtt5oWaq/BUYW0Q6T1icUBzRTQC9Lav/NFtcG9SrNi1rYvmNnDZoC+2jYpRpeGZshZpKvVLPsOVCiDjJma5sFEh/0KtBtRgEQ//f54hDUpCD7ePVsFx83jeM4="/>
+        <service android:label="BasicMapSolutionMapService" android:name="com.here.android.mpa.service.MapService">
+            <intent-filter>
+                <action android:name="com.here.android.mpa.service.MapService.v3">
+                </action>
+            </intent-filter>
+        </service>
+
+    </application>
+
+</manifest>

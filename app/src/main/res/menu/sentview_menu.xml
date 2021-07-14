@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/markAsCompleted"
+        android:title="@string/mark_as_completed"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/reschedule"
+        android:title="@string/reschedule"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/remove"
+        android:title="@string/remove"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/view_history"
+        android:title="@string/history"
+        app:showAsAction="never" />
+
+
+</menu>
