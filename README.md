@@ -1,6 +1,15 @@
-# LetsMeet
-An Event managing Android Application with Here Map Integrated on it.
-![meet](https://user-images.githubusercontent.com/67387997/125620950-d46a77f4-eac9-4f8b-8f94-0c032f40cd66.png)
+# LetsMeet ![](https://user-images.githubusercontent.com/67387997/125620950-d46a77f4-eac9-4f8b-8f94-0c032f40cd66.png)
+
+ An Event managing,coordinating Android Application with **_Here Map_** Integrated on it using Kotlin.
+ ## Here Map
+ * Here map is used to share the location of the event with this particular App only.
+ * And it is used to locate the Meeting Location and it is also used to navigate to the perticular location
+ 
+ ## Retrofit API
+ * Retrofit Api is used for the data serialization.
+ * All Database Operations performed with the help of PHP scripts.
+ * MySQL Database is used for Database operations.
+ 
 <h2> Login and Registration Pages</h2>
 <img src="images/01_Login.png" height="420"/><img src="images/02_Register.png" height="420"/>
 
